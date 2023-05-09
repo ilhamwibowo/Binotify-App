@@ -1,0 +1,73 @@
+
+.container-flex-list {
+    display: flex ;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    color: white;
+    font-size: 14px;
+    transition-duration:0.4s ;
+}
+
+a:hover .container-flex-list {
+    background-color: rgba(255,255,255,0.12);
+}
+
+.container-flex-list > div {
+    margin:10px ;
+    transition: 0.3s;
+}
+
+.flex-list-item-1 {
+    /* min-width: 150x; */
+    max-width: 750px;
+    flex-grow: 2;
+    display:grid;
+    grid-template-columns:40px 100%;
+    grid-template-rows: 20px 20px;
+    grid-template-areas: 
+        "photo title"
+        "photo singer";
+    column-gap: 20px;
+}
+
+.grid-list-item-1 {
+    grid-area: photo;
+}
+.grid-list-item-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-list-item-2 {
+    grid-area: title;
+}
+.grid-list-item-2 p {
+    margin-top: 5px;
+    height: 100%;
+    color: white;
+}
+
+.grid-list-item-3 {
+    grid-area: singer;
+}
+.grid-list-item-3 p {
+    margin-top: 5px;
+    height: 100%;
+    color: #b3b3b3;
+}
+
+
+.flex-list-item-2 {
+    min-width: 200px;
+    /* flex-grow: 1; */
+    padding: 12.5px 0px;
+    color: #b3b3b3;
+}
+
+
+.flex-list-item-3 {
+    min-width: 200px;
+    /* flex-grow: 1; */
+    padding: 12.5px 0px;
+    color: #b3b3b3;
+}

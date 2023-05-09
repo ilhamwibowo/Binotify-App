@@ -1,0 +1,204 @@
+body {
+    text-decoration: none;
+    margin:0;
+    background-color: #121212;
+}
+.container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 60px 100%;
+    grid-template-areas:
+        "sidebar navbar"
+        "sidebar main";
+}
+.sidebar {
+    grid-area: sidebar; 
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.main {
+    grid-area: main;
+    margin: 0;
+    color: white;
+    font-family: "Nunito Sans", "Montserrat", sans-serif;
+    overflow: hidden;
+    margin-top:-60px;
+}
+
+.container-song {
+    display:grid; 
+    background-image: linear-gradient( rgba(16,82,35,1), rgba(11,53,23,1));
+    grid-template-rows: 275px 75px;
+    grid-template-columns: 300px auto;
+    grid-template-areas:
+        "photo detail"
+        "photo audio"
+}
+
+.photo {
+    grid-area: photo;
+    text-align: center;
+    padding-top : 80px
+}
+
+img {
+    width: 250px;
+}
+
+.detail-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "title"
+    "others";
+    margin-top:100px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.title {
+    grid-area: title;
+    height: 120px
+}
+
+.title .music-name {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.detail-flex {
+    grid-area: others;
+    display: flex;
+    column-gap: 10px;
+}
+
+.song-list {
+    padding:30px;
+    grid-area: song-list;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.detail {
+    background-image: linear-gradient( rgba(16,82,35,1), rgba(11,53,23,1));
+    grid-area: detail;
+    background-color: blue;
+    padding-top:160px;
+}
+
+.album-name {
+    font-size:55px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.audio {
+    display: flex;
+    grid-area: audio;
+    column-gap: 100px;
+}
+
+.btn-delete {   
+    border: none;
+    padding:15px;
+    width: 100px;
+    border-radius:35px;
+    background-color: #1ED760 ;
+    margin: 0;
+    font-weight: 800;
+    transition-duration: 0.4s;
+}
+.btn-delete:hover {
+    width:110px;
+    height:50px;
+    background-color: #50DE82 ;
+}
+
+hr {
+    background-color:#D9DADC ;
+    border: 0.5px solid #D9DADC;
+}
+
+h3 {
+    margin-top:0;
+}
+
+.section-edit {
+    height: auto;
+    padding: 20px 45px;
+}
+
+.container-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 100px;
+    grid-template-areas:
+    "text file"
+    "btn-submit btn-submit";
+}
+
+.container-edit span {
+    font-size: 20px;
+    font-weight: 300;
+    tab-size: 2px;
+}
+
+.text-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas: "text input";
+    padding-left: 10px;
+}
+.text-grid .text {
+    grid-area: text;
+}
+.text-grid .input {
+    grid-area: input;
+    display: flex;
+    flex-direction: column;
+    padding-top : 17px;
+    padding-right : 100px;
+    row-gap: 16px;
+}
+
+.file {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "text input";
+    padding-left: 10px;
+}
+.file .text {
+    grid-area: text;
+}
+.file .input {
+    grid-area: input;
+    display: flex;
+    flex-direction: column;
+    padding-top : 17px;
+    /* padding-right : 100px; */
+    row-gap: 16px;
+}
+
+.btn-submit {   
+    grid-area: btn-submit;
+    border: none;
+    padding:15px;
+    width: 100px;
+    border-radius:35px;
+    background-color: #1ED760 ;
+    margin:20px 0 25px 0;
+    font-weight: 800;
+    transition-duration: 0.4s;
+    justify-self: center;
+}
+.btn-submit:hover {
+    width:110px;
+    height:50px;
+    background-color: #50DE82 ;
+
+}

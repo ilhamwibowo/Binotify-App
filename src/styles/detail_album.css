@@ -1,0 +1,161 @@
+.container-album {
+    display:grid;
+    
+    grid-template-rows: 350px auto;
+    grid-template-columns: 300px auto;
+    grid-template-areas:
+        "photo detail"
+        "song-list song-list";
+}
+
+.photo {
+    grid-area: photo;
+    background-color: white;
+    background-image: linear-gradient( rgba(16,82,35,1), rgba(11,53,23,1));
+    text-align: center;
+    padding-top : 80px
+}
+
+img {
+    width: 250px;
+}
+
+.detail-flex {
+    display: flex;
+    column-gap: 10px;
+    margin-top:0;
+    padding-left: 5px;
+}
+
+.song-list {
+    padding:30px;
+    grid-area: song-list;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.detail {
+    background-image: linear-gradient( rgba(16,82,35,1), rgba(11,53,23,1));
+    grid-area: detail;
+    background-color: blue;
+    padding-top:160px;
+}
+
+.album-name {
+    font-size:55px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.btn-delete {   
+    border: none;
+    padding:15px;
+    width: 100px;
+    border-radius:35px;
+    background-color: #1ED760 ;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    transition-duration: 0.4s;
+}
+
+.btn-delete:hover {
+    width:110px;
+    height:50px;
+    background-color: #50DE82 ;
+}
+
+body {
+    text-decoration: none;
+    margin:0;
+    background-color: #121212;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 60px 100%;
+    grid-template-areas:
+        "sidebar navbar"
+        "sidebar main";
+}
+
+.sidebar {
+    grid-area: sidebar; 
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.main {
+    grid-area: main;
+    /* margin: 10px 25px; */
+    color: white;
+    font-family: "Nunito Sans", "Montserrat", sans-serif;
+    overflow: hidden;
+    margin-top:-60px;
+}
+
+hr {
+    background-color:#D9DADC ;
+    border: 0.5px solid #D9DADC;
+}
+
+h3 {
+    margin-top:0;
+}
+
+.input-text{
+    width:380px;
+    padding:15px 10px 15px 10px;
+    margin: 12px 0 12px 0;
+    border-radius: 5px;
+    border:1px solid #7D7D7D;
+}
+
+.file {
+    width:380px;
+    padding:15px 10px 15px 10px;
+    margin: 12px 0 12px 0;
+    border-radius: 5px;
+    border:1px solid #7D7D7D;  
+}
+
+.btn-submit{ 
+    border: none;
+    padding:15px;
+    width: 150px;
+    border-radius:35px;
+    background-color: #1ED760 ;
+    margin:20px 0 25px 0;
+    font-weight: 800;
+    transition-duration: 0.4s;
+}
+
+.btn-submit:hover {
+    width:170px;
+    height:50px;
+    background-color: #50DE82 ;
+
+}
+
+
+.btn-submit{ 
+    border: none;
+    padding:15px;
+    width: 150px;
+    border-radius:35px;
+    background-color: #1ED760 ;
+    margin:20px 0 25px 0;
+    font-weight: 800;
+    transition-duration: 0.4s;
+}
+
+.btn-submit:hover {
+    width:170px;
+    height:50px;
+    background-color: #50DE82 ;
+
+}

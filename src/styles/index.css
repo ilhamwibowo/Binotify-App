@@ -1,0 +1,37 @@
+/* @import url('https://fonts.googleapis.com/css?family=Varela+Round:600|Montserrat|Open+Sans:600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Varela+Round') */
+body {
+    text-decoration: none;
+    background-color: #121212 !important;
+    font-family: 'Nunito Sans', 'Montserrat', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 60px 100%;
+    grid-template-areas:
+        "sidebar navbar"
+        "sidebar main";
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.sidebar {
+    grid-area: sidebar; 
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.main {
+    grid-area: main;
+    margin: 10px 25px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
